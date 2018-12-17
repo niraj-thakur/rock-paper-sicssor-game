@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Rock Paper Scissor Game
+		</title>
+		<link href="https://fonts.googleapis.com/css?family=Asap:400,500i,700" rel="stylesheet">
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<header>
+			<h1>
+			Rock Paper Scissor
+			</h1>
+		</header>
+		
+		<div class="score-board">
+			<div class="badge" id="user-label">user</div>
+			<div class="badge" id="comp-label">comp</div>
+			<span class="score" id="user-score">0</span>:<span class="score" id="comp-score">0</span>
+		</div>
+		
+		<div class="result">
+			<p>Paper covers rock. You win!</p>
+		</div>
+		
+		<div class="choices">
+			<div class="choice" id="choice-rock" onclick="handleChoiceSelection(0)"><img src="images/rock.png"><span id="rock-label">Rock<span></div>
+			<div class="choice" id="choice-paper" onclick="handleChoiceSelection(1)"><img src="images/paper.jpg"><span id="paper-label">Paper</span></div>
+			<div class="choice" id="choice-scissor" onclick="handleChoiceSelection(2)"><img src="images/scissor.jpg"><span id="scissor-label">Scissor</span></div>
+		</div>
+		
+		<div id="action-message">
+			Make your move.
+		</div>
+		
+		<script src="app.js"></script>
+	</body>
+</html>
